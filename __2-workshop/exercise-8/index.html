@@ -1,1 +1,68 @@
 <!-- ...crickets... -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration form</h1>
+    <form>
+
+        <label for="username">Username</label>
+        <input id="username" type="text" required />
+        <label for="password">password</label>
+        <input id="password" type="password" required />
+        <label for="email">Email</label>
+        <input type="email" required />
+
+        <h2>Which taxi do you require?</h2>
+        <label>
+            <input type="radio">
+            Car
+        </label>
+        <label>
+            <input type="radio" required name="van" value="van" />
+            Van
+        </label>
+
+        <label>
+            <input type="radio" required name="tuktuk" value="tuktuk" />
+            Tuk Tuk
+        </label>
+
+        <h2>Choose your extras</h2>
+        <label>
+            <input type="checkbox" name="baby-seat" id="baby-seat" />
+            Baby seat
+        </label>
+        <label>
+            <input type="checkbox" name="wheelchair" id="wheelchair" />
+            Wheelchair access
+        </label>
+        <label>
+            <input type="checkbox" name="privacy" id="privacy" />
+            Privacy windows
+        </label>
+
+        <h2>Where would you like us to pick you up?</h2>
+        <label for="pickup">Pickup Location:</label>
+        <select name="pickup">
+            <option value="null" selected>Select One</option>
+            <option value="taxi-office">Taxi Office</option>
+            <option value="town-hall">Town Hall</option>
+            <option value="hotel">Hotel</option>
+        </select>
+
+        <h2>Additional Instructions</h2>
+        <label for="special">Special</label>
+        <textarea name="special" placeholder="provide special instructions here"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
